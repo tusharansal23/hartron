@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Languges</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+      <style>
+         body {
+             font-family: sans-serif;
+             margin: 0;
+             padding: 0;
+             background-color: #f4f4f4;
+         }
+ 
+         .courses_section {
+             padding: 50px 20px;
+             max-width: 1200px;
+             margin: 0 auto;
+             margin-left: 70px;
+         }
+ 
+         @media (max-width: 768px) {
+    .courses_section {
+        margin-left: 0; /* Remove margin-left on mobile */
+    }
+}
+         .courses_taital {
+             text-align: center;
+             margin-bottom: 20px;
+             color: #333;
+         }
+ 
+         .courses_text {
+             text-align: center;
+             color: #666;
+             margin-bottom: 30px;
+         }
+ 
+         .courses_cards_container {
+             display: grid;
+             grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+             gap: 20px;
+             justify-items: center; /* Center cards horizontally */
+         }
+ 
+         .course_card {
+             background-color: #fff;
+             border-radius: 8px;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             overflow: hidden;
+             width: 90%; /* Adjust width to fit within grid */
+         }
+ 
+         .course_image {
+             width: 100%;
+             height: 200px;
+             object-fit: cover;
+         }
+ 
+         .course_info {
+             padding: 20px;
+         }
+ 
+         .course_info h4 {
+             margin-top: 0;
+             color: #333;
+         }
+ 
+         .course_subtitle {
+             color: #666;
+             margin-bottom: 10px;
+         }
+ 
+         .course_details {
+             list-style: none;
+             padding: 0;
+             margin: 0;
+         }
+ 
+         .course_details li {
+             margin-bottom: 5px;
+             color: #555;
+         }
+ 
+         .course_btn {
+             display: inline-block;
+             background-color: #007bff;
+             color: white;
+             padding: 10px 20px;
+             text-decoration: none;
+             border-radius: 5px;
+             margin-top: 15px;
+         }
+ 
+         .course_btn:hover {
+             background-color: #0056b3;
+         }
+ 
+         .short_courses_section {
+             padding: 50px 20px;
+             max-width: 1200px;
+             margin: 0 auto;
+             background-color: #e9ecef;
+         }
+ 
+         .short_courses_table {
+             width: 100%;
+             border-collapse: collapse;
+             margin-top: 20px;
+         }
+ 
+         .short_courses_table th, .short_courses_table td {
+             border: 1px solid #ddd;
+             padding: 8px;
+             text-align: left;
+         }
+ 
+         .short_courses_table th {
+             background-color: #f2f2f2;
+         }
+ 
+         .documents_section {
+             padding: 50px 20px;
+             max-width: 1200px;
+             margin: 0 auto;
+             background-color: #f8f9fa;
+         }
+ 
+         .documents_list {
+             list-style: none;
+             padding: 0;
+         }
+ 
+         .documents_list li {
+             margin-bottom: 10px;
+         }
+ 
+         @media (max-width: 1000px) {
+             .courses_cards_container {
+                 grid-template-columns: repeat(2, 1fr); /* 2 cards on smaller screens */
+             }
+         }
+ 
+         @media (max-width: 600px) {
+             .courses_cards_container {
+                 grid-template-columns: 1fr; /* 1 card on very small screens */
+             }
+         }
+     </style>
+   </head>
+   <body>
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo"><a href="index.html"><img class="logo-class" src="images/Hartron-logo-removebg.png"></a></div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./aboutUs.html">About Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                     </li>
+                     
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <!-- <div class="login_text"><a href="#">Login</a></div> -->
+                     <div class="search_icon"><a href="#"><img src="images/search-icon.png"></a></div>
+                  </form>
+               </div>
+            </nav>
+         </div>
+         <!--banner section start -->
+         <div class="banner_section layout_padding">
+            <div class="container">
+               <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <p class="banner_text">Language School</p>
+                        <h1 class="banner_taital">Any <br>language you wants</h1>
+                        <div class="read_bt"><a href="#">Read More</a></div>
+                     </div>
+                     <div class="carousel-item">
+                        <p class="banner_text">Language School</p>
+                        <h1 class="banner_taital">Any <br>language you wants</h1>
+                        <div class="read_bt"><a href="#">Read More</a></div>
+                     </div>
+                     <div class="carousel-item">
+                        <p class="banner_text">Language School</p>
+                        <h1 class="banner_taital">Any <br>language you wants</h1>
+                        <div class="read_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--banner section end -->
+      </div>
+      <!--header section end -->
+      <!--language  section start -->
+      <div class="courses_section layout_padding">
+         <div class="container">
+             <h1 class="courses_taital">Featured Courses</h1>
+             <p class="courses_text">Explore our top computer education and training courses below.</p>
+             <div class="courses_cards_container">
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>PGDCA</h4>
+                         <p class="course_subtitle">Post Graduate Diploma in Computer Application</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 52 weeks / 576 hours</li>
+                             <li><strong>Level:</strong> 5</li>
+                             <li><strong>Qualification:</strong> Graduation</li>
+                             <li><strong>Course Fee:</strong> ₹20,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>DCA</h4>
+                         <p class="course_subtitle">Diploma in Computer Application</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 52 weeks / 576 hours</li>
+                             <li><strong>Level:</strong> 4</li>
+                             <li><strong>Qualification:</strong> 10+2/ ITI or Equivalent</li>
+                             <li><strong>Course Fee:</strong> ₹20,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>DCS+</h4>
+                         <p class="course_subtitle">Diploma in Computer Software Plus</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 52 weeks / 576 hours</li>
+                             <li><strong>Level:</strong> 4</li>
+                             <li><strong>Qualification:</strong> 10+2/ ITI or Equivalent</li>
+                             <li><strong>Course Fee:</strong> ₹20,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>DCAA</h4>
+                         <p class="course_subtitle">Diploma in Computer Aided Accounting</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 52 weeks / 576 hours</li>
+                             <li><strong>Level:</strong> 4</li>
+                             <li><strong>Qualification:</strong> 10+2/ ITI or Equivalent</li>
+                             <li><strong>Course Fee:</strong> ₹20,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>DDP</h4>
+                         <p class="course_subtitle">Diploma in Designing & Publishing</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 52 weeks / 576 hours</li>
+                             <li><strong>Level:</strong> 4</li>
+                             <li><strong>Qualification:</strong> 10+2/ ITI or Equivalent</li>
+                             <li><strong>Course Fee:</strong> ₹20,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>DWT</h4>
+                         <p class="course_subtitle">Diploma in Web Technology</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 52 weeks / 576 hours</li>
+                             <li><strong>Level:</strong> 4</li>
+                             <li><strong>Qualification:</strong> 10+2/ ITI or Equivalent</li>
+                             <li><strong>Course Fee:</strong> ₹20,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>CHNA</h4>
+                         <p class="course_subtitle">Computer-H/W and Networking Associate</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 52 weeks / 576 hours</li>
+                             <li><strong>Level:</strong> 4</li>
+                             <li><strong>Qualification:</strong> 10+2/ ITI or Equivalent</li>
+                             <li><strong>Course Fee:</strong> ₹20,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>CCDL</h4>
+                         <p class="course_subtitle">Certificate Course in Digital Literacy</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 26 weeks </li>
+                             <li><strong>Level:</strong> 3</li>
+                             <li><strong>Qualification:</strong> 10th</li>
+                             <li><strong>Course Fee:</strong> ₹10,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>CCCBA</h4>
+                         <p class="course_subtitle">Certificate Course in Computer Basics and Accounting</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 26 weeks / 288 hours</li>
+                             <li><strong>Level:</strong> 3</li>
+                             <li><strong>Qualification:</strong> 10th</li>
+                             <li><strong>Course Fee:</strong> ₹10,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>CCWDM</h4>
+                         <p class="course_subtitle">Certificate Course in Web Designing and Multimedia</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 26 weeks / 288 hours</li>
+                             <li><strong>Level:</strong> 3</li>
+                             <li><strong>Qualification:</strong> 10th</li>
+                             <li><strong>Course Fee:</strong> ₹10,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>FCCB</h4>
+                         <p class="course_subtitle">Foundation Course in Computer Basics</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 12 weeks</li>
+                             <li><strong>Level:</strong> 3</li>
+                             <li><strong>Qualification:</strong> Applicants with basic learning ability, preferably 10th</li>
+                             <li><strong>Course Fee:</strong> ₹6,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>ADUA</h4>
+                         <p class="course_subtitle">Application Development Using Android</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 26 weeks / 390 hours</li>
+                             <li><strong>Level:</strong> 4</li>
+                             <li><strong>Qualification:</strong> 10+2 Pass or 10th with 2 year NTC/NAC/ITI or Equivalent</li>
+                             <li><strong>Course Fee:</strong> ₹12,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>PWP</h4>
+                         <p class="course_subtitle">Programming with Python</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 12 weeks</li>
+                             <li><strong>Level:</strong> 4</li>
+                             <li><strong>Qualification:</strong> 10th Pass</li>
+                             <li><strong>Course Fee:</strong> ₹8,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>APHD</h4>
+                         <p class="course_subtitle">Assistant PHP Developer</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 26 weeks</li>
+                             <li><strong>Level:</strong> 3</li>
+                             <li><strong>Qualification:</strong> 10th Pass</li>
+                             <li><strong>Course Fee:</strong> ₹12,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>HPIA</h4>
+                         <p class="course_subtitle">Hardware Peripheral and Installation Assistant</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 26 weeks / 288 hours</li>
+                             <li><strong>Level:</strong> 3</li>
+                             <li><strong>Qualification:</strong> 10th Pass</li>
+                             <li><strong>Course Fee:</strong> ₹10,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>DMA</h4>
+                         <p class="course_subtitle">Digital Marketing Assistant</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 26 weeks</li>
+                             <li><strong>Level:</strong> 3</li>
+                             <li><strong>Qualification:</strong> 10th Pass</li>
+                             <li><strong>Course Fee:</strong> ₹15,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+                 <div class="course_card">
+                     
+                     <div class="course_info">
+                         <h4>STA</h4>
+                         <p class="course_subtitle">Software/Application Testing Assistant</p>
+                         <ul class="course_details">
+                             <li><strong>Duration:</strong> 26 weeks / 270 hours</li>
+                             <li><strong>Level:</strong> 3</li>
+                             <li><strong>Qualification:</strong> 10th Pass</li>
+                             <li><strong>Course Fee:</strong> ₹12,000</li>
+                         </ul>
+                         <a href="./contact.html" class="course_btn">Start Learning</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ 
+     <div class="short_courses_section">
+         <div class="container">
+             <h2 class="courses_taital">Short Term Courses (10+2/ ITI or Equivalent)</h2>
+             <table class="short_courses_table">
+                 <thead>
+                     <tr>
+                         <th>Course Name</th>
+                         <th>Duration</th>
+                         <th>Fee</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>Fundamentals of Cyber Security</td>
+                         <td>6 Weeks</td>
+                         <td>₹5,000</td>
+                     </tr>
+                     <tr>
+                         <td>"C" Language</td>
+                         <td>4 Weeks</td>
+                         <td>₹2,000</td>
+                     </tr>
+                     <tr>
+                         <td>C++ with OOPs</td>
+                         <td>8 Weeks</td>
+                         <td>₹3,500</td>
+                     </tr>
+                     <tr>
+                         <td>PHP with MySQL</td>
+                         <td>4 Weeks</td>
+                         <td>₹3,500</td>
+                     </tr>
+                     <tr>
+                         <td>Core Java</td>
+                         <td>6 Weeks</td>
+                         <td>₹4,500</td>
+                     </tr>
+                     <tr>
+                         <td>Financial Accounting</td>
+                         <td>6 Weeks</td>
+                         <td>₹3,000</td>
+                     </tr>
+                     <tr>
+                         <td>Autocad</td>
+                         <td>8 Weeks</td>
+                         <td>₹4,000</td>
+                     </tr>
+                     <tr>
+                         <td>Advanced Java (Swings, RMI, Corba, Java Beans & Servlets)</td>
+                         <td>8 Weeks</td>
+                         <td>₹5,500</td>
+                     </tr>
+                 </tbody>
+             </table>
+         </div>
+     </div>
+ 
+     <div class="documents_section">
+         <div class="container">
+             <h2 class="courses_taital">Documents Required</h2>
+             <ul class="documents_list">
+                 <li>2 Photograph</li>
+                 <li>Aadhar Card Copy</li>
+                 <li>Photocopy of 10th/12th/Graduation/Equivalent</li>
+                 <li>GST will be extra as per applicable</li>
+             </ul>
+         </div>
+     </div>
+
+      
+      <!--language  section end -->
+      <!--newsletter section start -->
+      <div class="container">
+         <div class="newsletter_section layout_padding">
+            <h1 class="newsletter_taital">Subscribe Our Newsletter</h1>
+            <div class="mail_main">
+               <input type="text" class="email_text" placeholder="Enter Your email " name="Enter Your email ">
+               <div class="left_arrow"><a href="#"><img src="images/left-arrow.png"></a></div>
+            </div>
+         </div>
+      </div>
+      <!--newsletter section end -->
+      <!--footer section start -->
+      <div class="footer_section">
+         <div class="container">
+            <h1 class="touch_text">Get In Touch</h1>
+            <div class="email_box">
+               <div class="input_main">
+                  <form action="/action_page.php">
+                     <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Name" name="Name">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Phone" name="Phone">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Email" name="Email">
+                     </div>
+                     <div class="form-group">
+                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+                     </div>
+                  </form>
+                  <div class="send_bt"><a href="#">SEND</a></div>
+               </div>
+            </div>
+            <div class="call_main">
+               <div class="call_text"><img src="images/call-icon.png"><span class="padding_left_15">Call Now  941-752-8191</span></div>
+               <div class="call_text"><img src="images/mail-icon.png"><span class="padding_left_15">demo@gmail.com</span></div>
+            </div>
+            <div class="social_icon">
+               <ul>
+                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                  <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--footer section end -->
+      <!--copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text"> 2025 All Rights Reserved by Hartron skill center</a></p>
+         </div>
+      </div>
+      <!--copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+</html>

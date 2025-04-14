@@ -263,11 +263,13 @@ button {
     background: transparent !important;
     border-bottom: 2px solid #dbc64c;
 }
-
+.service-height {
+    height: 400px;
+}
 .header_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    /* background-image: url(../images/banner-bg.png); */
     height: auto;
     background-size: 100%;
 }

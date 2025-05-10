@@ -1,0 +1,25 @@
+{
+    "redirects": [
+      {
+        "source": "/aboutUs.html",
+        "destination": "/aboutUs",
+        "permanent": true
+      },
+      {
+        "source": "/contact.html",
+        "destination": "/contact",
+        "permanent": true
+      },
+      {
+        "source": "/gallery.html",
+        "destination": "/gallery",
+        "permanent": true
+      },
+      {
+        "source": "/courses.html",
+        "destination": "/courses",
+        "permanent": true
+      }
+    ]
+  }
+  
